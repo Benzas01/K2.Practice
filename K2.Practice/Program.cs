@@ -30,7 +30,7 @@ namespace K2.Practice
             public static int NumberDiffrentVowelsInLine(string line)
             {
                 int count = 0;
-                string vowels = "AaĄąĘęĖėĮįŲųŪūIiUuOoEeAaYy";
+                string vowels = "aąęėįųūiuoeay";
                 List<char> existingvowels = new List<char>();
                 for (int i = 0; i < line.Length - 1; i++)
                 {
