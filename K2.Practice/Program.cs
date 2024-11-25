@@ -20,11 +20,11 @@ namespace K2.Practice
                 char[] numbers = { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9' };
                 if (line.IndexOfAny(numbers) != -1)
                 {
-                    return true;
+                    return false;
                 }
                 else
                 {
-                    return false;
+                    return true;
                 }
             }
             public static int NumberDiffrentVowelsInLine(string line)
