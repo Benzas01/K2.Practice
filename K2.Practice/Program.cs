@@ -11,7 +11,7 @@ namespace K2.Practice
     {
         static void Main(string[] args)
         {
-            TaskUtils.PerformTask("Tekstas.txt", "Redbook.txt");
+            TaskUtils.PerformTask("Tekstas.txt", "RedTekstas.txt");
         }
         public class TaskUtils
         {
@@ -79,7 +79,6 @@ namespace K2.Practice
             }
             public static string FindWord2Line(string line, string punctuation)
             {
-                string Word2 = "";
                 string[] Words = line.Split(punctuation.ToCharArray(), StringSplitOptions.RemoveEmptyEntries);
                 for (int i = Words.Length - 1; i >= 0; i--)
                 {
@@ -93,9 +92,10 @@ namespace K2.Practice
                             word2.Append(line[cursor]);
                             cursor++;
                         }
+                        return word2;
                     }
                 }
-                return Word2;
+                return " ";
             }
             public static void PerformTask(string fd, string fr)
             {
