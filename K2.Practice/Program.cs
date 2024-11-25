@@ -31,6 +31,7 @@ namespace K2.Practice
             {
                 int count = 0;
                 string vowels = "aąęėįųūiuoeay";
+                line = line.ToLower();
                 List<char> existingvowels = new List<char>();
                 for (int i = 0; i < line.Length - 1; i++)
                 {
