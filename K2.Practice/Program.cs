@@ -82,7 +82,7 @@ namespace K2.Practice
                 string[] Words = line.Split(punctuation.ToCharArray(), StringSplitOptions.RemoveEmptyEntries);
                 for (int i = Words.Length - 1; i >= 0; i--)
                 {
-                    if (NoDigits(Words[i]) == false)
+                    if (NoDigits(Words[i]) == true)
                     {
                         string word2 = Words[i];
                         int cursor = line.IndexOf(word2);
